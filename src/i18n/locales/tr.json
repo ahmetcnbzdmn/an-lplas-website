@@ -1,0 +1,154 @@
+{
+  "nav": {
+    "home": "Anasayfa",
+    "products": "Ürünler",
+    "about": "Hakkımızda",
+    "references": "Referanslar",
+    "certificates": "Sertifikalar",
+    "contact": "İletişim",
+    "getQuote": "Teklif Al"
+  },
+  "hero": {
+    "title": "Ürünler {accent} {block}",
+    "accent": "hayatımızı",
+    "block": "değiştirir",
+    "about": "Hakkımızda",
+    "contact": "İletişime Geçin"
+  },
+  "footer": {
+    "desc": "30 yıldır sektörde Su Yalıtım Malzemeleri ve İzolasyon ürünleri ile profesyonel hizmet sunuyoruz.",
+    "quickLinks": "Hızlı Bağlantılar",
+    "contact": "İletişim",
+    "rights": "Tüm Hakları Saklıdır."
+  },
+  "features": {
+    "sub": "Neden Biz?",
+    "title": "Kaliteli Hizmet ve Profesyonel Çözümler",
+    "f1": {
+      "title": "İstenilen Ölçü & Adet",
+      "desc": "Talep ettiğiniz ölçü ve adetlerde siparişleriniz hazırlanır."
+    },
+    "f2": {
+      "title": "En Uygun Fiyat",
+      "desc": "Ürünlerimizde en iyi kaliteyi en iyi fiyat ile sizlere sunuyoruz."
+    },
+    "f3": {
+      "title": "Üretim Bizim İşimiz",
+      "desc": "İsteklerinize göre en hızlı şekilde tesisimizde üretim sağlanır."
+    }
+  },
+  "about": {
+    "heroSub": "Anıl Plas Kurumsal",
+    "heroTitle": "Hakkımızda",
+    "breadcrumbHome": "Anasayfa",
+    "breadcrumbCurrent": "Hakkımızda",
+    "expNumber": "30",
+    "expText": "Yıllık<br/>Tecrübe",
+    "sectionTitle": "Hakkımızda Her Şey",
+    "p1": "Anıl Plas Plastik İnşaat İzolasyon İmalat Sanayi Dış Ticaret İthalat İhracat A.Ş. 30 yıldır sektörde Su Yalıtım Malzemeleri Membran ve Kiremit Altı Örtüleri üreterek hizmet vermektedir.",
+    "p2": "2019 yılında da Anıl Plas markası ile temel duvarları Drenaj Levhası ve Polietilen Naylon üretimine başlamıştır. Kurulan fabrika en çağdaş teknolojik ürünlerle ve deneyimli uzman personellerle donatılmıştır.",
+    "p3": "Firma en iyi hizmeti ve ürünü sunma ilkesinden ödün vermemiş, müşterilerinin ihtiyaçlarını karşılamaya yönelik çözümler sunmuştur. Firmanın temel ilkeleri arasında yer alan uluslararası standartlarda üretim ve hizmet anlayışı çerçevesinde uyumluluğu onaylı firmalarca sertifikalandırılmıştır.",
+    "highlight": "Firma, yurtiçi pazarında gücünü katlamayı dünya pazarında da rekabet edebilecek güçte olmayı hedefler.",
+    "values": {
+      "v1": {
+        "title": "Dünyanın Her Yerine Teslimat",
+        "desc": "Anıl Plas dünyanın neresinde olursanız olun, sizlere ürünlerini en güvenli ve hızlı şekilde teslim eder."
+      },
+      "v2": {
+        "title": "Üretim Bizim İşimiz",
+        "desc": "Bütün ürünlerimiz kusursuz ve yüksek kaliteli ham madde ve işçilikle hazırlanır."
+      },
+      "v3": {
+        "title": "Zamanında Teslimat",
+        "desc": "Siparişlerinize bir telefon uzağınızdayız. Belirlediğiniz tarihe ürünleriniz yetiştirilir ve teslim edilir."
+      }
+    }
+  },
+  "products": {
+    "heroSub": "Ürün Kataloğu",
+    "heroTitle": "Tüm Ürünlerimiz",
+    "heroDesc": "İzolasyon ve su yalıtımında 30 yıllık tecrübemizle sunduğumuz profesyonel çözümleri keşfedin.",
+    "categories": {
+      "all": "Tümü",
+      "ankapol10": "Ankapol 10 Serisi",
+      "ankapol20": "Ankapol 20 Serisi",
+      "bikamaxD10": "Bikamax Diomand 10 Serisi",
+      "bikamaxD20": "Bikamax Diomand 20 Serisi",
+      "bikamaxF10": "Bikamax Flex 10 Serisi",
+      "bikamaxExtra": "Bikamax Ekstra",
+      "bikamax": "Bikamax",
+      "drainage": "Anıl Plas Drenaj Levhası"
+    },
+    "labels": {
+      "features": "Teknik Özellikler",
+      "description": "Ürün Hakkında",
+      "category": "Kategori",
+      "getQuote": "Hemen Teklif Al",
+      "backToProducts": "Ürünlere Geri Dön",
+      "productCode": "Ürün Kodu"
+    },
+    "dynamic": {
+      "description": "{name} - Anıl Plas tarafından sunulan profesyonel izolasyon ve su yalıtımı çözümü.",
+      "featureSize": "Boyut: {size}"
+    }
+  },
+  "contact": {
+    "heroSub": "Bize Ulaşın",
+    "heroTitle": "Sizinle İletişimde Olmak İsteriz",
+    "heroDesc": "Sorularınız, iş birliği teklifleriniz veya teknik destek için bize her zaman ulaşabilirsiniz.",
+    "infoTitle": "İletişim Bilgileri",
+    "addressLabel": "Adres",
+    "phoneLabel": "Telefon",
+    "emailLabel": "E-posta",
+    "formTitle": "Mesaj Gönderin",
+    "formDesc": "En kısa sürede size geri dönüş sağlayacağız.",
+    "labels": {
+      "name": "Adınız Soyadınız",
+      "email": "E-posta Adresiniz",
+      "phone": "Telefon Numaranız",
+      "subject": "Konu",
+      "message": "Mesajınız"
+    },
+    "placeholders": {
+      "name": "Örn: Ahmet Yılmaz",
+      "email": "orn@email.com",
+      "phone": "05xx xxx xx xx",
+      "subject": "Hangi konuda yazıyorsunuz?",
+      "message": "Mesajınızı buraya yazabilirsiniz..."
+    },
+    "submit": "Gönder",
+    "submitting": "Gönderiliyor...",
+    "success": "Mesajınız başarıyla <strong>info@anilplas.com</strong> adresine iletilmek üzere gönderildi!"
+  },
+  "certificates": {
+    "heroSub": "Kalite ve Güven",
+    "heroTitle": "Sertifikalarımız",
+    "breadcrumbCurrent": "Sertifikalar",
+    "introTitle": "Uluslararası Kalite Standartları",
+    "introDesc": "Anıl Plas olarak üretim süreçlerimizin tamamında uluslararası standartlara ve yasal mevzuatlara tam uyum sağlıyoruz. Ürünlerimizin kalitesi bağımsız kuruluşlarca tescillenmiştir.",
+    "officialBadge": "Resmi Belge",
+    "view": "Görüntüle",
+    "items": {
+      "tse": {
+        "title": "Anıl Plas Drenaj Levhası TSE",
+        "desc": "Anıl Plas tarafından üretilen drenaj levhaları için Türk Standartları Enstitüsü (TSE) tarafından verilen resmi kalite uygunluk belgesi. Ürünlerimizin ulusal kalite ve güvenlik standartlarına uygunluğunu tescil eder."
+      },
+      "marka": {
+        "title": "Marka Tescil Belgesi",
+        "desc": "Anıl Plas markasının Türk Patent ve Marka Kurumu nezdinde resmi tescil belgesi. Marka kimliğimizin ve haklarımızın yasal koruma altında olduğunu gösterir."
+      }
+    }
+  },
+  "references": {
+    "heroSub": "Güçlü İş Birlikleri",
+    "heroTitle": "Referanslarımız",
+    "breadcrumbCurrent": "Referanslar",
+    "introTitle": "Birlikte <span class='accent'>Büyüyoruz</span>",
+    "introDesc": "Yılların verdiği güven ve tecrübeyle, Türkiye'nin ve dünyanın önde gelen firmalarına çözüm ortağı olmaktan gurur duyuyoruz. İzolasyon ve inşaat sektöründe kalite standartlarını birlikte belirliyoruz.",
+    "cta": {
+      "title": "Siz de Çözüm Ortaklarımız Arasına Katılın",
+      "desc": "Projeniz için en uygun izolasyon çözümlerini profesyonel ekibimizle birlikte planlayalım.",
+      "btn": "Bize Ulaşın"
+    }
+  }
+}

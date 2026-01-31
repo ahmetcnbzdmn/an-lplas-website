@@ -1,0 +1,154 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About Us",
+    "references": "References",
+    "certificates": "Certificates",
+    "contact": "Contact",
+    "getQuote": "Get Quote"
+  },
+  "hero": {
+    "title": "Products {accent} {block}",
+    "accent": "change our lives",
+    "block": "",
+    "about": "About Us",
+    "contact": "Contact Us"
+  },
+  "footer": {
+    "desc": "Providing professional service with Waterproofing Materials and Isolation products in the sector for 30 years.",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "rights": "All Rights Reserved."
+  },
+  "features": {
+    "sub": "Why Us?",
+    "title": "Quality Service and Professional Solutions",
+    "f1": {
+      "title": "Custom Sizes & Quantities",
+      "desc": "Your orders are prepared in the sizes and quantities you request."
+    },
+    "f2": {
+      "title": "Best Price",
+      "desc": "We offer the best quality at the best price."
+    },
+    "f3": {
+      "title": "Production is Our Business",
+      "desc": "Production is provided in our facility as quickly as possible according to your requests."
+    }
+  },
+  "about": {
+    "heroSub": "Anıl Plas Corporate",
+    "heroTitle": "About Us",
+    "breadcrumbHome": "Home",
+    "breadcrumbCurrent": "About Us",
+    "expNumber": "30",
+    "expText": "Years of<br/>Experience",
+    "sectionTitle": "Everything About Us",
+    "p1": "Anıl Plas Plastik İnşaat İzolasyon İmalat Sanayi Dış Ticaret İthalat İhracat A.Ş. has been serving for 30 years in the sector by producing Waterproofing Materials, Membranes and Under-tile Covers.",
+    "p2": "In 2019, it started the production of foundation walls Drainage Board and Polyethylene Nylon with the Anıl Plas brand. The factory established is equipped with the most modern technological products and experienced expert staff.",
+    "p3": "The company has not compromised on the principle of providing the best service and product, and has offered solutions to meet the needs of its customers. Within the framework of the production and service understanding at international standards, which is among the basic principles of the company, its compliance has been certified by approved companies.",
+    "highlight": "The company aims to multiply its power in the domestic market and to be powerful enough to compete in the world market.",
+    "values": {
+      "v1": {
+        "title": "Delivery to All Over the World",
+        "desc": "Anıl Plas delivers its products to you in the safest and fastest way, wherever you are in the world."
+      },
+      "v2": {
+        "title": "Number #1 in Production",
+        "desc": "All our products are prepared with flawless and high quality raw materials and workmanship."
+      },
+      "v3": {
+        "title": "On Time Delivery",
+        "desc": "We are a phone call away for your orders. Your products are prepared and delivered on the date you specify."
+      }
+    }
+  },
+  "products": {
+    "heroSub": "Product Catalog",
+    "heroTitle": "All Our Products",
+    "heroDesc": "Explore the professional solutions we offer with 30 years of experience in insulation and waterproofing.",
+    "categories": {
+      "all": "All",
+      "ankapol10": "Ankapol 10 Series",
+      "ankapol20": "Ankapol 20 Series",
+      "bikamaxD10": "Bikamax Diomand 10 Series",
+      "bikamaxD20": "Bikamax Diomand 20 Series",
+      "bikamaxF10": "Bikamax Flex 10 Series",
+      "bikamaxExtra": "Bikamax Extra",
+      "bikamax": "Bikamax",
+      "drainage": "Anıl Plas Drainage Board"
+    },
+    "labels": {
+      "features": "Technical Specifications",
+      "description": "About Product",
+      "category": "Category",
+      "getQuote": "Get Quote Now",
+      "backToProducts": "Back to Products",
+      "productCode": "Product Code"
+    },
+    "dynamic": {
+      "description": "{name} - Professional insulation and waterproofing solution provided by Anıl Plas.",
+      "featureSize": "Size: {size}"
+    }
+  },
+  "contact": {
+    "heroSub": "Contact Us",
+    "heroTitle": "We'd Love to Hear From You",
+    "heroDesc": "You can always reach us for your questions, cooperation offers or technical support.",
+    "infoTitle": "Contact Information",
+    "addressLabel": "Address",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email",
+    "formTitle": "Send a Message",
+    "formDesc": "We will get back to you as soon as possible.",
+    "labels": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "subject": "Subject",
+      "message": "Your Message"
+    },
+    "placeholders": {
+      "name": "E.g.: John Doe",
+      "email": "example@email.com",
+      "phone": "05xx xxx xx xx",
+      "subject": "What is the subject?",
+      "message": "You can write your message here..."
+    },
+    "submit": "Send",
+    "submitting": "Sending...",
+    "success": "Your message has been successfully sent to be forwarded to <strong>info@anilplas.com</strong>!"
+  },
+  "certificates": {
+    "heroSub": "Quality and Trust",
+    "heroTitle": "Our Certificates",
+    "breadcrumbCurrent": "Certificates",
+    "introTitle": "International Quality Standards",
+    "introDesc": "As Anıl Plas, we fully comply with international standards and legal regulations in all our production processes. The quality of our products is certified by independent organizations.",
+    "officialBadge": "Official Document",
+    "view": "View",
+    "items": {
+      "tse": {
+        "title": "Anıl Plas Drainage Board TSE",
+        "desc": "Official quality conformity certificate issued by the Turkish Standards Institute (TSE) for drainage boards produced by Anıl Plas. It certifies the compliance of our products with national quality and safety standards."
+      },
+      "marka": {
+        "title": "Trademark Registration Certificate",
+        "desc": "Official registration certificate of the Anıl Plas brand before the Turkish Patent and Trademark Office. It shows that our brand identity and rights are under legal protection."
+      }
+    }
+  },
+  "references": {
+    "heroSub": "Strong Collaborations",
+    "heroTitle": "Our References",
+    "breadcrumbCurrent": "References",
+    "introTitle": "Growing <span class='accent'>Together</span>",
+    "introDesc": "With the trust and experience of years, we are proud to be a solution partner to the leading companies in Turkey and the world. We set quality standards together in the insulation and construction sector.",
+    "cta": {
+      "title": "Join Our Solution Partners",
+      "desc": "Let's plan the most suitable insulation solutions for your project together with our professional team.",
+      "btn": "Contact Us"
+    }
+  }
+}
