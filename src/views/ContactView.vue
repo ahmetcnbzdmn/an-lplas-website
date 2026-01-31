@@ -140,7 +140,7 @@ const handleSubmit = () => {
                     width="100%" 
                     height="450" 
                     style="border:0;" 
-                    allowfullscreen="" 
+                    allowfullscreen 
                     loading="lazy" 
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
