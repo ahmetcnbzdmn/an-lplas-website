@@ -1,23 +1,26 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
+import { useI18n } from 'vue-i18n';
 import Card from 'primevue/card';
 import Carousel from 'primevue/carousel';
 
-const testimonials = ref([
+const { t } = useI18n();
+
+const testimonials = computed(() => [
   {
     name: "Ahmet DURMAZ",
-    title: "Müşteri",
-    testimonial: "Ne zaman arasam kendilerine ulaşıp gerekli malzemeleri temin edebiliyorum. Devamlı çalıştığım bir firma. Anıl Plas’ı kesinlikle öneririm. Uzun yıllar çalışma dileğiyle."
+    title: t('home.testimonials.role'),
+    testimonial: t('home.testimonials.items.t1')
   },
   {
     name: "Nihat ÖZTÜRK",
-    title: "Müşteri",
-    testimonial: "Anıl Plas ürünlerini ilk kez sipariş ettikten sonra devamlı olarak sipariş geçiyorum. Kendileri toplu ürün isteklerimizde en iyi şekilde yardımcı oldular."
+    title: t('home.testimonials.role'),
+    testimonial: t('home.testimonials.items.t2')
   },
   {
     name: "Mesut ERDİ",
-    title: "Müşteri",
-    testimonial: "Ürünler beklediğimden hızlı bir şekilde ulaştı. Gerek teslimat gerekse iletişim konusunda herhangi bir problem yaşamadık. Anıl Plas firmasına teşekkür ediyorum."
+    title: t('home.testimonials.role'),
+    testimonial: t('home.testimonials.items.t3')
   }
 ]);
 
@@ -44,8 +47,8 @@ const responsiveOptions = ref([
     <section class="testimonials-section">
         <div class="container testimonial-container">
             <div class="section-header animate-fade-in-up">
-                <span class="sub-title">Yorumlar</span>
-                <h2 class="main-title">Müşterilerimiz Hakkımızda Ne Dedi?</h2>
+                <span class="sub-title">{{ t('home.testimonials.sub') }}</span>
+                <h2 class="main-title">{{ t('home.testimonials.title') }}</h2>
                 <div class="title-divider"></div>
             </div>
 

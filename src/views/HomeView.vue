@@ -1,7 +1,10 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n';
 import HeroSection from '../components/HeroSection.vue';
 import FeatureCards from '../components/FeatureCards.vue';
 import TestimonialsSection from '../components/TestimonialsSection.vue';
+
+const { t } = useI18n();
 </script>
 
 <template>
@@ -12,30 +15,30 @@ import TestimonialsSection from '../components/TestimonialsSection.vue';
         <div class="container">
             <div class="about-grid">
                 <div class="about-content">
-                    <span class="sub-title">Anıl Plas Hakkında</span>
-                    <h2 class="main-title">30 Yıllık Tecrübe ve Yenilikçi Üretim</h2>
-                    <p class="description">Anıl Plas Plastik İnşaat İzolasyon İmalat Sanayi A.Ş. 30 yıldır sektörde Su Yalıtım Malzemeleri, Membran ve Kiremit Altı Örtüleri üreterek hizmet vermektedir. 2019 yılında da Anıl Plas markası ile temel duvarları Drenaj Levhası ve Polietilen Naylon üretimine başlayarak gücüne güç katmıştır.</p>
+                    <span class="sub-title">{{ t('home.about.sub') }}</span>
+                    <h2 class="main-title">{{ t('home.about.title') }}</h2>
+                    <p class="description">{{ t('home.about.desc') }}</p>
                     
                     <div class="stats-grid">
                         <div class="stat-item">
                             <span class="stat-number">30+</span>
-                            <span class="stat-label">Yıllık Tecrübe</span>
+                            <span class="stat-label">{{ t('home.about.stats.exp') }}</span>
                         </div>
                         <div class="stat-item">
                             <span class="stat-number">100%</span>
-                            <span class="stat-label">Yerli Üretim</span>
+                            <span class="stat-label">{{ t('home.about.stats.local') }}</span>
                         </div>
                          <div class="stat-item">
                             <span class="stat-number">40+</span>
-                            <span class="stat-label">Ürün Çeşidi</span>
+                            <span class="stat-label">{{ t('home.about.stats.products') }}</span>
                         </div>
                     </div>
                 </div>
                 <div class="about-image-wrapper">
-                     <img src="https://static.wixstatic.com/media/dcd026_0d03d153b18c4a7f9b7f901f524f2c82~mv2.png/v1/fill/w_1119,h_511,q_90,enc_avif,quality_auto/dcd026_0d03d153b18c4a7f9b7f901f524f2c82~mv2.png" alt="Anıl Plas Fabrika" class="about-img"/>
+                     <img src="https://static.wixstatic.com/media/dcd026_0d03d153b18c4a7f9b7f901f524f2c82~mv2.png/v1/fill/w_1119,h_511,q_90,enc_avif,quality_auto/dcd026_0d03d153b18c4a7f9b7f901f524f2c82~mv2.png" :alt="t('home.about.alt')" class="about-img"/>
                      <div class="experience-badge">
                         <span class="years">30</span>
-                        <span class="text">Yıllık Güven</span>
+                        <span class="text">{{ t('home.about.badge') }}</span>
                      </div>
                 </div>
             </div>

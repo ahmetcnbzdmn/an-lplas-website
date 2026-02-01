@@ -13,7 +13,8 @@
     "accent": "change our lives",
     "block": "",
     "about": "About Us",
-    "contact": "Contact Us"
+    "contact": "Contact Us",
+    "heroAlt": "Anıl Plas Facilities"
   },
   "footer": {
     "desc": "Providing professional service with Waterproofing Materials and Isolation products in the sector for 30 years.",
@@ -45,6 +46,7 @@
     "expNumber": "30",
     "expText": "Years of<br/>Experience",
     "sectionTitle": "Everything About Us",
+    "imgAlt": "Anıl Plas Production Facility",
     "p1": "Anıl Plas Plastik İnşaat İzolasyon İmalat Sanayi Dış Ticaret İthalat İhracat A.Ş. has been serving for 30 years in the sector by producing Waterproofing Materials, Membranes and Under-tile Covers.",
     "p2": "In 2019, it started the production of foundation walls Drainage Board and Polyethylene Nylon with the Anıl Plas brand. The factory established is equipped with the most modern technological products and experienced expert staff.",
     "p3": "The company has not compromised on the principle of providing the best service and product, and has offered solutions to meet the needs of its customers. Within the framework of the production and service understanding at international standards, which is among the basic principles of the company, its compliance has been certified by approved companies.",
@@ -149,6 +151,30 @@
       "title": "Join Our Solution Partners",
       "desc": "Let's plan the most suitable insulation solutions for your project together with our professional team.",
       "btn": "Contact Us"
+    }
+  },
+  "home": {
+    "about": {
+      "sub": "About Anıl Plas",
+      "title": "30 Years of Experience and Innovative Production",
+      "desc": "Anıl Plas Plastik İnşaat İzolasyon İmalat Sanayi A.Ş. has been serving the sector for 30 years by producing Waterproofing Materials, Membranes and Under-tile Covers. In 2019, it strengthened its power by starting the production of foundation walls Drainage Board and Polyethylene Nylon with the Anıl Plas brand.",
+      "stats": {
+        "exp": "Years of Experience",
+        "local": "Local Production",
+        "products": "Product Variety"
+      },
+      "badge": "Years of Trust",
+      "alt": "Anıl Plas Factory and Production Area"
+    },
+    "testimonials": {
+      "sub": "Testimonials",
+      "title": "What Our Customers Say About Us",
+      "role": "Customer",
+      "items": {
+        "t1": "I can reach them and obtain the necessary materials whenever I call. It is a company I work with continuously. I definitely recommend Anıl Plas. Wishing to work together for many years.",
+        "t2": "After ordering Anıl Plas products for the first time, I order continuously. They helped us in the best way for our bulk product requests.",
+        "t3": "The products arrived faster than I expected. We did not experience any problems in terms of delivery or communication. I thank Anıl Plas company."
+      }
     }
   }
 }

@@ -23,7 +23,7 @@ const { t } = useI18n();
       <div class="container">
         <div class="about-grid">
           <div class="about-image-wrapper animate-fade-in-left">
-            <img src="https://primefaces.org/cdn/primevue/images/galleria/galleria10.jpg" alt="Anıl Plas Üretim" class="about-img" />
+            <img src="https://primefaces.org/cdn/primevue/images/galleria/galleria10.jpg" :alt="t('about.imgAlt')" class="about-img" />
             <div class="experience-badge">
               <span class="exp-number">{{ t('about.expNumber') }}</span>
               <span class="exp-text" v-html="t('about.expText')"></span>

@@ -13,7 +13,8 @@
     "accent": "hayatımızı",
     "block": "değiştirir",
     "about": "Hakkımızda",
-    "contact": "İletişime Geçin"
+    "contact": "İletişime Geçin",
+    "heroAlt": "Anıl Plas Tesisleri"
   },
   "footer": {
     "desc": "30 yıldır sektörde Su Yalıtım Malzemeleri ve İzolasyon ürünleri ile profesyonel hizmet sunuyoruz.",
@@ -45,6 +46,7 @@
     "expNumber": "30",
     "expText": "Yıllık<br/>Tecrübe",
     "sectionTitle": "Hakkımızda Her Şey",
+    "imgAlt": "Anıl Plas Üretim Tesisi",
     "p1": "Anıl Plas Plastik İnşaat İzolasyon İmalat Sanayi Dış Ticaret İthalat İhracat A.Ş. 30 yıldır sektörde Su Yalıtım Malzemeleri Membran ve Kiremit Altı Örtüleri üreterek hizmet vermektedir.",
     "p2": "2019 yılında da Anıl Plas markası ile temel duvarları Drenaj Levhası ve Polietilen Naylon üretimine başlamıştır. Kurulan fabrika en çağdaş teknolojik ürünlerle ve deneyimli uzman personellerle donatılmıştır.",
     "p3": "Firma en iyi hizmeti ve ürünü sunma ilkesinden ödün vermemiş, müşterilerinin ihtiyaçlarını karşılamaya yönelik çözümler sunmuştur. Firmanın temel ilkeleri arasında yer alan uluslararası standartlarda üretim ve hizmet anlayışı çerçevesinde uyumluluğu onaylı firmalarca sertifikalandırılmıştır.",
@@ -149,6 +151,30 @@
       "title": "Siz de Çözüm Ortaklarımız Arasına Katılın",
       "desc": "Projeniz için en uygun izolasyon çözümlerini profesyonel ekibimizle birlikte planlayalım.",
       "btn": "Bize Ulaşın"
+    }
+  },
+  "home": {
+    "about": {
+      "sub": "Anıl Plas Hakkında",
+      "title": "30 Yıllık Tecrübe ve Yenilikçi Üretim",
+      "desc": "Anıl Plas Plastik İnşaat İzolasyon İmalat Sanayi A.Ş. 30 yıldır sektörde Su Yalıtım Malzemeleri, Membran ve Kiremit Altı Örtüleri üreterek hizmet vermektedir. 2019 yılında da Anıl Plas markası ile temel duvarları Drenaj Levhası ve Polietilen Naylon üretimine başlayarak gücüne güç katmıştır.",
+      "stats": {
+        "exp": "Yıllık Tecrübe",
+        "local": "Yerli Üretim",
+        "products": "Ürün Çeşidi"
+      },
+      "badge": "Yıllık Güven",
+      "alt": "Anıl Plas Fabrika ve Üretim Alanı"
+    },
+    "testimonials": {
+      "sub": "Yorumlar",
+      "title": "Müşterilerimiz Hakkımızda Ne Dedi?",
+      "role": "Müşteri",
+      "items": {
+        "t1": "Ne zaman arasam kendilerine ulaşıp gerekli malzemeleri temin edebiliyorum. Devamlı çalıştığım bir firma. Anıl Plas’ı kesinlikle öneririm. Uzun yıllar çalışma dileğiyle.",
+        "t2": "Anıl Plas ürünlerini ilk kez sipariş ettikten sonra devamlı olarak sipariş geçiyorum. Kendileri toplu ürün isteklerimizde en iyi şekilde yardımcı oldular.",
+        "t3": "Ürünler beklediğimden hızlı bir şekilde ulaştı. Gerek teslimat gerekse iletişim konusunda herhangi bir problem yaşamadık. Anıl Plas firmasına teşekkür ediyorum."
+      }
     }
   }
 }

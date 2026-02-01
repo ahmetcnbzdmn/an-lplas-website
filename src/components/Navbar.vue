@@ -15,7 +15,7 @@ const setLanguage = (lang: string) => {
     locale.value = lang;
 };
 
-const activeCategory = ref('Ankapol 10 Serisi');
+const activeCategory = ref('ankapol10');
 const showMobileMenu = ref(false);
 
 const toggleMobileMenu = () => {
@@ -46,32 +46,32 @@ onUnmounted(() => {
 
 const groupedProducts = computed(() => {
     const groups: Record<string, any[]> = {
-        'Ankapol 10 Serisi': [],
-        'Ankapol 20 Serisi': [],
-        'Bikamax Diomand 10 Serisi': [],
-        'Bikamax Diomand 20 Serisi': [],
-        'Bikamax Flex 10 Serisi': [],
-        'Bikamax Ekstra': [],
-        'Bikamax': [],
-        'Anıl Plas Drenaj Levhası': []
+        'ankapol10': [],
+        'ankapol20': [],
+        'bikamaxD10': [],
+        'bikamaxD20': [],
+        'bikamaxF10': [],
+        'bikamaxExtra': [],
+        'bikamax': [],
+        'drainage': []
     };
 
     productsData.forEach(product => {
         const name = product.name.toLowerCase();
         if (name.includes('ankapol')) {
-            if (name.includes('pp') || name.includes('pc')) groups['Ankapol 10 Serisi']!.push(product);
-            else if (name.includes('ep') || name.includes('ec')) groups['Ankapol 20 Serisi']!.push(product);
+            if (name.includes('pp') || name.includes('pc')) groups['ankapol10']!.push(product);
+            else if (name.includes('ep') || name.includes('ec')) groups['ankapol20']!.push(product);
         } else if (name.includes('diamond') || name.includes('diomand')) {
-            if (name.includes('pp') || name.includes('pc')) groups['Bikamax Diomand 10 Serisi']!.push(product);
-            else if (name.includes('ep') || name.includes('ec')) groups['Bikamax Diomand 20 Serisi']!.push(product);
+            if (name.includes('pp') || name.includes('pc')) groups['bikamaxD10']!.push(product);
+            else if (name.includes('ep') || name.includes('ec')) groups['bikamaxD20']!.push(product);
         } else if (name.includes('flex')) {
-            groups['Bikamax Flex 10 Serisi']!.push(product);
+            groups['bikamaxF10']!.push(product);
         } else if (name.includes('ekstra')) {
-            groups['Bikamax Ekstra']!.push(product);
+            groups['bikamaxExtra']!.push(product);
         } else if (name.startsWith('bikamax')) {
-            groups['Bikamax']!.push(product);
+            groups['bikamax']!.push(product);
         } else if (name.includes('polietilen') || name.includes('naylon') || name.includes('drenaj')) {
-            groups['Anıl Plas Drenaj Levhası']!.push(product);
+            groups['drainage']!.push(product);
         }
     });
 
@@ -127,12 +127,12 @@ const items = computed(() => [
                                                 :class="{ active: activeCategory === cat }"
                                                 @mouseenter="activeCategory = cat"
                                             >
-                                                {{ cat }}
+                                                {{ t(`products.categories.${cat}`) }}
                                                 <i class="pi pi-chevron-right" />
                                             </div>
                                         </div>
                                         <div class="mega-content">
-                                            <div class="mega-category-title">{{ activeCategory }}</div>
+                                            <div class="mega-category-title">{{ t(`products.categories.${activeCategory}`) }}</div>
                                             <div class="mega-product-grid">
                                                 <router-link 
                                                     v-for="product in groupedProducts[activeCategory]" 

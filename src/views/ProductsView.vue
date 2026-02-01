@@ -7,22 +7,22 @@ import Button from 'primevue/button';
 
 const { t } = useI18n();
 const products = ref(productsData);
-const selectedCategory = ref('Tümü');
+const selectedCategory = ref('all');
 
 const categories = computed(() => [
-    { label: t('products.categories.all'), key: 'Tümü' },
-    { label: t('products.categories.ankapol10'), key: 'Ankapol 10 Serisi' },
-    { label: t('products.categories.ankapol20'), key: 'Ankapol 20 Serisi' },
-    { label: t('products.categories.bikamaxD10'), key: 'Bikamax Diomand 10 Serisi' },
-    { label: t('products.categories.bikamaxD20'), key: 'Bikamax Diomand 20 Serisi' },
-    { label: t('products.categories.bikamaxF10'), key: 'Bikamax Flex 10 Serisi' },
-    { label: t('products.categories.bikamaxExtra'), key: 'Bikamax Ekstra' },
-    { label: t('products.categories.bikamax'), key: 'Bikamax' },
-    { label: t('products.categories.drainage'), key: 'Anıl Plas Drenaj Levhası' }
+    { label: t('products.categories.all'), key: 'all' },
+    { label: t('products.categories.ankapol10'), key: 'ankapol10' },
+    { label: t('products.categories.ankapol20'), key: 'ankapol20' },
+    { label: t('products.categories.bikamaxD10'), key: 'bikamaxD10' },
+    { label: t('products.categories.bikamaxD20'), key: 'bikamaxD20' },
+    { label: t('products.categories.bikamaxF10'), key: 'bikamaxF10' },
+    { label: t('products.categories.bikamaxExtra'), key: 'bikamaxExtra' },
+    { label: t('products.categories.bikamax'), key: 'bikamax' },
+    { label: t('products.categories.drainage'), key: 'drainage' }
 ]);
 
 const filteredProducts = computed(() => {
-    if (selectedCategory.value === 'Tümü') {
+    if (selectedCategory.value === 'all') {
         return products.value;
     }
     
@@ -30,32 +30,32 @@ const filteredProducts = computed(() => {
         const name = product.name.toLowerCase();
         const cat = selectedCategory.value;
         
-        if (cat === 'Ankapol 10 Serisi') {
+        if (cat === 'ankapol10') {
             return name.includes('ankapol') && (name.includes('pp') || name.includes('pc'));
         }
-        if (cat === 'Ankapol 20 Serisi') {
+        if (cat === 'ankapol20') {
             return name.includes('ankapol') && (name.includes('ep') || name.includes('ec'));
         }
-        if (cat === 'Bikamax Diomand 10 Serisi') {
+        if (cat === 'bikamaxD10') {
             return (name.includes('diamond') || name.includes('diomand')) && (name.includes('pp') || name.includes('pc'));
         }
-        if (cat === 'Bikamax Diomand 20 Serisi') {
+        if (cat === 'bikamaxD20') {
             return (name.includes('diamond') || name.includes('diomand')) && (name.includes('ep') || name.includes('ec'));
         }
-        if (cat === 'Bikamax Flex 10 Serisi') {
+        if (cat === 'bikamaxF10') {
             return name.includes('flex');
         }
-        if (cat === 'Bikamax Ekstra') {
+        if (cat === 'bikamaxExtra') {
             return name.includes('ekstra');
         }
-        if (cat === 'Bikamax') {
+        if (cat === 'bikamax') {
             return name.startsWith('bikamax') && 
                    !name.includes('diamond') && 
                    !name.includes('diomand') && 
                    !name.includes('flex') && 
                    !name.includes('ekstra');
         }
-        if (cat === 'Anıl Plas Drenaj Levhası') {
+        if (cat === 'drainage') {
             return name.includes('polietilen') || name.includes('naylon') || name.includes('drenaj');
         }
         
