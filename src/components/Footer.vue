@@ -31,6 +31,7 @@ const { t } = useI18n();
                         </p>
                         <p class="contact-item"><i class="pi pi-phone"></i> <a href="tel:+905303175543">0530 317 55 43</a></p>
                         <p class="contact-item"><i class="pi pi-envelope"></i> <a href="mailto:info@anilplas.com">info@anilplas.com</a></p>
+                        <p class="contact-item"><i class="pi pi-instagram"></i> <a href="https://www.instagram.com/anilplas_a.s/" target="_blank">@anilplas_a.s</a></p>
                     </div>
                 </div>
             </div>

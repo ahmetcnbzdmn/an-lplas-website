@@ -56,15 +56,6 @@ const { t } = useI18n();
                 </div>
             </div>
 
-            <div class="social-section animate-fade-in-up" style="animation-delay: 0.2s;">
-                <div class="social-label">{{ t('references.introTitle') }}</div>
-                <div class="social-links-modern">
-                    <a href="https://www.instagram.com/anilplas_a.s/" target="_blank" class="social-btn-modern">
-                        <i class="pi pi-instagram"></i>
-                        <span>Instagram</span>
-                    </a>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -217,57 +208,6 @@ const { t } = useI18n();
     gap: 0.8rem;
 }
 
-.social-section {
-    text-align: center;
-    padding: 4rem;
-    background: #f8faff;
-    border-radius: 30px;
-    border: 1px solid rgba(3, 69, 174, 0.05);
-}
-
-.social-label {
-    font-size: 0.9rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: var(--primary-color);
-    margin-bottom: 2rem;
-}
-
-.social-links-modern {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.social-btn-modern {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem 2rem;
-    background: #ffffff;
-    border-radius: 15px;
-    color: var(--text-main);
-    font-weight: 700;
-    text-decoration: none;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
-    transition: all 0.3s ease;
-}
-
-.social-btn-modern:hover {
-    background: #000000;
-    color: #ffffff;
-    transform: translateY(-5px);
-}
-
-.social-btn-modern i {
-    font-size: 1.4rem;
-    color: #E1306C; /* Instagram color */
-}
-
-.social-btn-modern:hover i {
-    color: #ffffff;
-}
 
 /* Map Section */
 .map-section {
