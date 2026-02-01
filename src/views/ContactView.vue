@@ -1,29 +1,7 @@
 <script setup lang="ts">
-import { ref } from 'vue';
 import { useI18n } from 'vue-i18n';
 
 const { t } = useI18n();
-const form = ref({
-    name: '',
-    email: '',
-    phone: '',
-    subject: '',
-    message: ''
-});
-
-const isSubmitting = ref(false);
-const submitted = ref(false);
-
-const handleSubmit = () => {
-    isSubmitting.value = true;
-    // Simulate API call
-    setTimeout(() => {
-        isSubmitting.value = false;
-        submitted.value = true;
-        // In a real app, this would send an email to info@anilplas.com
-        form.value = { name: '', email: '', phone: '', subject: '', message: '' };
-    }, 1500);
-};
 </script>
 
 <template>
@@ -40,92 +18,51 @@ const handleSubmit = () => {
     <!-- Contact Content -->
     <section class="contact-content">
         <div class="container">
-            <div class="contact-grid">
-                <!-- Contact Info -->
-                <div class="info-sidebar animate-fade-in-up">
-                    <div class="info-card">
-                        <h3>{{ t('contact.infoTitle') }}</h3>
-                        <div class="info-items">
-                            <div class="info-item">
-                                <div class="icon-box">
-                                    <i class="pi pi-map-marker"></i>
-                                </div>
-                                <div class="text-box">
-                                    <label>{{ t('contact.addressLabel') }}</label>
-                                    <p>Saray Mah., Saraykent Cad., No:4 Kahramankazan / Ankara</p>
-                                </div>
-                            </div>
-                            <div class="info-item">
-                                <div class="icon-box">
-                                    <i class="pi pi-phone"></i>
-                                </div>
-                                <div class="text-box">
-                                    <label>{{ t('contact.phoneLabel') }}</label>
-                                    <p><a href="tel:+905303175543">0530 317 55 43</a></p>
-                                </div>
-                            </div>
-                            <div class="info-item">
-                                <div class="icon-box">
-                                    <i class="pi pi-envelope"></i>
-                                </div>
-                                <div class="text-box">
-                                    <label>{{ t('contact.emailLabel') }}</label>
-                                    <p><a href="mailto:info@anilplas.com">info@anilplas.com</a></p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="social-links">
-                            <a href="https://www.instagram.com/anilplas_a.s/" target="_blank" class="social-btn"><i class="pi pi-instagram"></i></a>
-                        </div>
+            <div class="info-grid-modern animate-fade-in-up">
+                <!-- Address Card -->
+                <div class="contact-card-modern">
+                    <div class="card-icon">
+                        <i class="pi pi-map-marker"></i>
                     </div>
+                    <h3>{{ t('contact.addressLabel') }}</h3>
+                    <p class="card-text">Saray Mah., Saraykent Cad., No:4 Kahramankazan / Ankara</p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Saray+Mah.,+Saraykent+Cad.,+No:4+Kahramankazan/Ankara" target="_blank" class="card-link">
+                        {{ t('certificates.view') }} <i class="pi pi-external-link ml-2"></i>
+                    </a>
                 </div>
 
-                <!-- Contact Form -->
-                <div class="form-wrapper animate-fade-in-up" style="animation-delay: 0.2s;">
-                    <form @submit.prevent="handleSubmit" class="modern-form">
-                        <div class="form-header">
-                            <h2>{{ t('contact.formTitle') }}</h2>
-                            <p>{{ t('contact.formDesc') }}</p>
-                        </div>
+                <!-- Phone Card -->
+                <div class="contact-card-modern">
+                    <div class="card-icon">
+                        <i class="pi pi-phone"></i>
+                    </div>
+                    <h3>{{ t('contact.phoneLabel') }}</h3>
+                    <p class="card-text">0530 317 55 43</p>
+                    <a href="tel:+905303175543" class="card-link">
+                        {{ t('hero.contact') }} <i class="pi pi-arrow-right ml-2"></i>
+                    </a>
+                </div>
 
-                        <div class="input-grid">
-                            <div class="input-group">
-                                <label>{{ t('contact.labels.name') }}</label>
-                                <input v-model="form.name" type="text" :placeholder="t('contact.placeholders.name')" required />
-                            </div>
-                            <div class="input-group">
-                                <label>{{ t('contact.labels.email') }}</label>
-                                <input v-model="form.email" type="email" :placeholder="t('contact.placeholders.email')" required />
-                            </div>
-                        </div>
+                <!-- Email Card -->
+                <div class="contact-card-modern">
+                    <div class="card-icon">
+                        <i class="pi pi-envelope"></i>
+                    </div>
+                    <h3>{{ t('contact.emailLabel') }}</h3>
+                    <p class="card-text">info@anilplas.com</p>
+                    <a href="mailto:info@anilplas.com" class="card-link">
+                        {{ t('hero.contact') }} <i class="pi pi-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
 
-                        <div class="input-grid">
-                            <div class="input-group">
-                                <label>{{ t('contact.labels.phone') }}</label>
-                                <input v-model="form.phone" type="tel" :placeholder="t('contact.placeholders.phone')" />
-                            </div>
-                            <div class="input-group">
-                                <label>{{ t('contact.labels.subject') }}</label>
-                                <input v-model="form.subject" type="text" :placeholder="t('contact.placeholders.subject')" />
-                            </div>
-                        </div>
-
-                        <div class="input-group full-width">
-                            <label>{{ t('contact.labels.message') }}</label>
-                            <textarea v-model="form.message" rows="5" :placeholder="t('contact.placeholders.message')" required></textarea>
-                        </div>
-
-                        <button type="submit" class="submit-btn" :disabled="isSubmitting">
-                            <span v-if="!isSubmitting">{{ t('contact.submit') }}</span>
-                            <span v-else><i class="pi pi-spin pi-spinner mr-2"></i> {{ t('contact.submitting') }}</span>
-                        </button>
-
-                        <div v-if="submitted" class="success-message">
-                            <i class="pi pi-check-circle"></i>
-                            <span v-html="t('contact.success')"></span>
-                        </div>
-                    </form>
+            <div class="social-section animate-fade-in-up" style="animation-delay: 0.2s;">
+                <div class="social-label">{{ t('references.introTitle') }}</div>
+                <div class="social-links-modern">
+                    <a href="https://www.instagram.com/anilplas_a.s/" target="_blank" class="social-btn-modern">
+                        <i class="pi pi-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -200,283 +137,180 @@ const handleSubmit = () => {
     padding: 5rem 0;
 }
 
-.contact-grid {
+/* Contact Content */
+.contact-content {
+    padding: 0 0 5rem;
+}
+
+.info-grid-modern {
     display: grid;
-    grid-template-columns: 0.8fr 1.2fr;
-    gap: 4rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    margin-bottom: 4rem;
 }
 
-/* Info Sidebar */
-.info-card {
-    background: var(--primary-color);
-    padding: 3rem;
+.contact-card-modern {
+    background: #ffffff;
+    padding: 3rem 2rem;
     border-radius: 30px;
-    color: #ffffff;
-    height: 100%;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.03);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-.info-card h3 {
-    color: #ffffff;
+.contact-card-modern:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 30px 60px rgba(3, 69, 174, 0.08);
+    border-color: rgba(3, 69, 174, 0.1);
+}
+
+.card-icon {
+    width: 80px;
+    height: 80px;
+    background: #f8faff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 2rem;
-    margin-bottom: 2.5rem;
-}
-
-.info-items {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    margin-bottom: 3rem;
-}
-
-.info-item {
-    display: flex;
-    gap: 1.5rem;
-    align-items: flex-start;
-}
-
-.icon-box {
-    width: 50px;
-    height: 50px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    flex-shrink: 0;
-}
-
-.text-box label {
-    display: block;
-    font-size: 0.9rem;
-    opacity: 0.7;
-    margin-bottom: 0.3rem;
-    font-weight: 600;
-}
-
-.text-box p {
-    font-size: 1.1rem;
-    font-weight: 500;
-    line-height: 1.4;
-}
-
-.text-box p a:hover {
-    text-decoration: underline;
-}
-
-.social-links {
-    margin-top: auto;
-    display: flex;
-    gap: 1rem;
-}
-
-.social-btn {
-    width: 45px;
-    height: 45px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
     transition: all 0.3s ease;
 }
 
-.social-btn:hover {
-    background: #ffffff;
-    color: var(--primary-color);
-    transform: translateY(-3px);
+.contact-card-modern:hover .card-icon {
+    background: var(--primary-color);
+    color: #ffffff;
+    transform: rotate(10deg);
 }
 
-/* Modern Form */
-.form-wrapper {
-    background: #ffffff;
-    padding: 4rem;
-    border-radius: 30px;
-    box-shadow: 0 30px 60px rgba(3, 69, 174, 0.08);
-    border: 1px solid rgba(0, 0, 0, 0.05);
+.contact-card-modern h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--text-main);
+    margin-bottom: 1rem;
 }
 
-.form-header {
-    margin-bottom: 3rem;
-}
-
-.form-header h2 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.form-header p {
+.card-text {
     color: var(--text-light);
-}
-
-.input-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
     margin-bottom: 2rem;
+    flex-grow: 1;
 }
 
-.input-group {
-    display: flex;
-    flex-direction: column;
+.card-link {
+    display: inline-flex;
+    align-items: center;
+    color: var(--primary-color);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: gap 0.3s ease;
+}
+
+.card-link:hover {
     gap: 0.8rem;
 }
 
-.input-group label {
-    font-weight: 700;
-    color: var(--text-main);
-    font-size: 0.95rem;
+.social-section {
+    text-align: center;
+    padding: 4rem;
+    background: #f8faff;
+    border-radius: 30px;
+    border: 1px solid rgba(3, 69, 174, 0.05);
 }
 
-.input-group input, 
-.input-group textarea {
-    padding: 1.2rem;
-    border: 2px solid #e2e8f0;
-    border-radius: 12px;
-    font-family: var(--font-body);
-    font-size: 1rem;
-    transition: all 0.3s ease;
-    background-color: #ffffff !important;
-    color: var(--text-main) !important;
-}
-
-.input-group input::placeholder,
-.input-group textarea::placeholder {
-    color: #94a3b8;
-}
-
-.input-group input:focus, 
-.input-group textarea:focus {
-    outline: none;
-    border-color: var(--primary-color);
-    background-color: #ffffff !important;
-    box-shadow: 0 0 0 4px rgba(3, 69, 174, 0.1);
-}
-
-.full-width {
-    grid-column: span 2;
-    margin-bottom: 2.5rem;
-}
-
-.submit-btn {
-    background: var(--primary-color);
-    color: #ffffff;
-    padding: 1.2rem 3rem;
-    border: none;
-    border-radius: 12px;
+.social-label {
+    font-size: 0.9rem;
     font-weight: 800;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
 }
 
-.submit-btn:hover:not(:disabled) {
-    background: var(--secondary-color);
-    transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(56, 182, 255, 0.3);
+.social-links-modern {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
 }
 
-.submit-btn:disabled {
-    opacity: 0.7;
-    cursor: not-allowed;
-}
-
-.success-message {
-    margin-top: 2rem;
-    padding: 1.5rem;
-    background: #ecfdf5;
-    color: #059669;
-    border-radius: 12px;
+.social-btn-modern {
     display: flex;
     align-items: center;
     gap: 1rem;
-    font-weight: 600;
+    padding: 1rem 2rem;
+    background: #ffffff;
+    border-radius: 15px;
+    color: var(--text-main);
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.social-btn-modern:hover {
+    background: #000000;
+    color: #ffffff;
+    transform: translateY(-5px);
+}
+
+.social-btn-modern i {
+    font-size: 1.4rem;
+    color: #E1306C; /* Instagram color */
+}
+
+.social-btn-modern:hover i {
+    color: #ffffff;
 }
 
 /* Map Section */
 .map-section {
-    padding: 5rem 0 10rem;
+    padding: 0 0 10rem;
 }
 
 .map-container {
-    border-radius: 30px;
+    border-radius: 40px;
     overflow: hidden;
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 /* Responsive */
 @media (max-width: 1200px) {
-    .container {
-        padding: 0 2rem;
+    .info-grid-modern {
+        gap: 1.5rem;
     }
 }
 
 @media (max-width: 991px) {
-    .container {
-        padding: 0 1.5rem;
+    .info-grid-modern {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: 0 auto 4rem;
     }
-    
+
+    .social-section {
+        padding: 3rem 1.5rem;
+    }
+
     .main-title {
-        font-size: 2.5rem;
-    }
-    
-    .contact-hero {
-        padding: 8rem 0 4rem;
-    }
-
-    .contact-content {
-        padding: 3rem 0;
-    }
-
-    .contact-grid {
-        gap: 3rem;
-    }
-    
-    .info-card {
-        padding: 2rem;
-        border-radius: 24px;
-    }
-
-    .info-card h3 {
-        font-size: 1.5rem;
-        margin-bottom: 2rem;
-    }
-
-    .form-wrapper {
-        padding: 2rem;
-        border-radius: 24px;
-    }
-
-    .form-header h2 {
-        font-size: 2rem;
-    }
-
-    .map-section {
-        padding: 3rem 0 6rem;
+        font-size: 3rem;
     }
 }
 
 @media (max-width: 768px) {
-    .input-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-    
-    .full-width {
-        grid-column: span 1;
-        margin-bottom: 2rem;
-    }
-
     .main-title {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
-    .description {
-        font-size: 1.1rem;
+    .contact-hero {
+        padding: 10rem 0 5rem;
     }
 }
 </style>
